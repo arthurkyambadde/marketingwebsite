@@ -1,0 +1,117 @@
+.hero {
+  padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+  text-align: center;
+  background: var(--color-background-alt);
+}
+
+.title {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.story,
+.mission,
+.values,
+.team {
+  padding: var(--spacing-4xl) 0;
+}
+
+.mission {
+  background: var(--color-background-alt);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-4xl);
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.storyContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-xl);
+}
+
+.missionContent {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.valuesGrid,
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.valueTitle,
+.memberName {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.valueDescription,
+.memberBio {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.memberRole {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+}
+
+.stats {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-3xl);
+  text-align: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statValue {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.statLabel {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .valuesGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
