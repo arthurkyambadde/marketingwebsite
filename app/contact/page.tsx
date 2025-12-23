@@ -36,7 +36,7 @@ export default function ContactPage() {
         <Container>
           <h1 className={styles.title}>Get in Touch</h1>
           <p className={styles.subtitle}>
-            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </Container>
       </section>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Card>
                   <div className={styles.success}>
                     <h2>Thank you for contacting us!</h2>
-                    <p>We'll get back to you as soon as possible.</p>
+                    <p>We&apos;ll get back to you as soon as possible.</p>
                     <Button onClick={() => setSubmitted(false)}>Send another message</Button>
                   </div>
                 </Card>
