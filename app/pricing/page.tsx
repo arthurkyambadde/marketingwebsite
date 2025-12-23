@@ -40,7 +40,7 @@ export default function PricingPage() {
                   <h2 className={styles.planName}>{plan.name}</h2>
                   <p className={styles.planDescription}>{plan.description}</p>
                   <div className={styles.planPrice}>
-                    {plan.price.custom ? (
+                    {'custom' in plan.price && plan.price.custom ? (
                       <span className={styles.customPrice}>Custom</span>
                     ) : (
                       <>
