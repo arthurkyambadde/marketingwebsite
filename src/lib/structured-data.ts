@@ -154,7 +154,7 @@ export function generateArticleSchema(
 }
 
 export function generateFAQSchema(
-  faqs: Array<{ question: string; answer: string }>
+  faqs: ReadonlyArray<{ readonly question: string; readonly answer: string }>
 ) {
   return {
     '@context': 'https://schema.org',
