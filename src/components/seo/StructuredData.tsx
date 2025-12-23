@@ -1,5 +1,6 @@
 interface StructuredDataProps {
-  data: Record<string, unknown>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  data: any;
 }
 
 export function StructuredData({ data }: StructuredDataProps) {
